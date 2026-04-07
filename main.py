@@ -1,5 +1,6 @@
 from door import Door
 
+
 if __name__ == "__main__":
     door = Door()
 
