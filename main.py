@@ -13,7 +13,8 @@ GOODBYE_USERS_COMMAND = "До свидания"
 print("УПРАВЛЕНИЕ ДВЕРЬЮ")
 print(f"Доступные команды: {OPEN_DOOR_USERS_COMMAND}, {CLOSE_DOOR_USERS_COMMAND}, {CHECK_DOOR_USERS_COMMAND}, {ENTER_SYSTEM_DOOR_USERS_COMMAND}")
 
-while True:
+user_command = None
+while user_command != ENTER_SYSTEM_DOOR_USERS_COMMAND:
     user_command = input("\nВведите команду: ").strip().lower()
 
     if user_command == OPEN_DOOR_USERS_COMMAND:
@@ -27,6 +28,5 @@ while True:
 
     elif user_command == ENTER_SYSTEM_DOOR_USERS_COMMAND:
         print(GOODBYE_USERS_COMMAND)
-        break
     else:
         print(f"Неизвестная команда! Используйте толкьо команды: {OPEN_DOOR_USERS_COMMAND}, {CLOSE_DOOR_USERS_COMMAND}, {CHECK_DOOR_USERS_COMMAND}, {ENTER_SYSTEM_DOOR_USERS_COMMAND}")
